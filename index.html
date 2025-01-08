@@ -1,0 +1,48 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to WebWonders Shopping</h1>
+  
+  <!-- Registration/Login -->
+  <div id="auth">
+    <h2>Register / Login</h2>
+    <form id="authForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="authStatus"></div>
+  </div>
+
+  <!-- Product Listing -->
+  <div id="products" style="display: none;">
+    <h2>Available Products</h2>
+    <div class="product">
+      <p>Product 1: $10</p>
+      <button class="buyBtn">Buy</button>
+    </div>
+    <div class="product">
+      <p>Product 2: $20</p>
+      <button class="buyBtn">Buy</button>
+    </div>
+  </div>
+
+  <!-- Chat Section -->
+  <div id="chat" style="display: none;">
+    <h2>Chat with Customer Care</h2>
+    <div id="messages"></div>
+    <input type="text" id="chatInput" placeholder="Type a message">
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+  </html>
+    
