@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+#products, #chat {
+  margin-top: 20px;
+}
+
+.product {
+  margin-bottom: 10px;
+}
+
+#messages {
+  border: 1px solid #ddd;
+  padding: 10px;
+  height: 150px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
